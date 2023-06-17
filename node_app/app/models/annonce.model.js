@@ -3,7 +3,7 @@ module.exports = (mongoose) => {
     {
       title: String,
       description: String,
-      published: Boolean,
+      image: String,
     },
     { timestamps: true }
   );
@@ -14,6 +14,6 @@ module.exports = (mongoose) => {
     return object;
   });
 
-  const Tutorial = mongoose.model("tutorial", schema);
-  return Tutorial;
+  const Annonce = mongoose.model("annonce", schema);
+  return Annonce;
 };

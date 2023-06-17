@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Oussama tailba's application." });
 });
 
-require("./app/routes/tutorial.routes")(app);
+require("./app/routes/annonce.routes")(app);
 require("./app/routes/user.routes")(app);
 
 const PORT = 8000;
